@@ -1,0 +1,20 @@
+<%= form_for hero do |f| %>
+    <% if hero.errors.any? %>
+    <ul>
+      <% hero.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+    <% end %>
+    <p>Name Your Hero!</p>
+    <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    </p>
+    <%= f.hidden_field :attk_val, value: 10 %>
+    <%= f.hidden_field :hp, value: 15 %>
+    <%= f.hidden_field :def_val, value: 10 %>
+    <%= f.hidden_field :exp_total, value: 0 %>
+    <%= f.submit %>
+    <% end %>
+

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'encounters/blacksmith'
+  get 'encounters/rummage'
+  get 'encounters/monster'
+  get 'heros/home'
   resources :items
   resources :monsters
   resources :heros

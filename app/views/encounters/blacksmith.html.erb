@@ -1,0 +1,11 @@
+<title>Blacksmith</title>
+<h1>The grizzled blacksmith welcomes you into his workshop... </h1>
+
+<h3> You have <%= @hero.exp_total %> Experience Points that you can spend! </h3>
+
+<h3> Which item would you like to upgrade? </h3>
+<ol>
+<% @hero.items.each do |item| %>
+    <li><%= item.name %></li> 
+    <% end %>
+    </ol>
