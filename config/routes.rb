@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'encounters/rummage'
   get 'encounters/monster'
   get 'heros/home'
+  get 'items/:id/upgrade', to: 'items#upgrade'
   resources :items
   resources :monsters
   resources :heros

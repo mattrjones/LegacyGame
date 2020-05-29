@@ -9,6 +9,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <%= link_to "My Hero", hero_path(Hero.find(1)) %>
+
   <body>
     <%= yield %>
   </body>

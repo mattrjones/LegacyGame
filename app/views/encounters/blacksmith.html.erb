@@ -6,6 +6,6 @@
 <h3> Which item would you like to upgrade? </h3>
 <ol>
 <% @hero.items.each do |item| %>
-    <li><%= item.name %></li> 
+    <li><%= link_to item.name, "/items/#{item.id}/upgrade" %></li> 
     <% end %>
     </ol>

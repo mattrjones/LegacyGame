@@ -3,6 +3,8 @@ class CreateItems < ActiveRecord::Migration[6.0]
     create_table :items do |t|
       t.string :stat
       t.integer :bonus
+      t.integer :hero_id
+      t.string :name
 
       t.timestamps
     end
