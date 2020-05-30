@@ -4,3 +4,5 @@
 Upgrading it will increase its bonus to your <%= @item.stat_name %> by <%= @item.upg_amt %> 
 to a total of <%= @item.bonus + @item.upg_amt %></h3>
 <h3> Would you like to upgrade it? </h3>
+<%= button_to 'Yes', item_path(@item), :method => :get %>
+<%= button_to 'No', "/encounters/blacksmith", :method => :get %>
