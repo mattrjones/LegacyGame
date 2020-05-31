@@ -1,6 +1,6 @@
 class EncountersController < ApplicationController
   def blacksmith
-    @hero = Hero.find(1) 
+    @hero = current_hero 
   end
 
   def rummage
