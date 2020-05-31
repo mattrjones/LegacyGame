@@ -1,5 +1,7 @@
 <h1>Upgrade Your Item Here</h1>
 
+<h3> You have <%= Hero.find(1).exp_total %> experience points to spend. </h3>
+
 <h3><%= @item.name %> will cost <%= @item.upg_exp_cost.to_i %> exp points to upgrade. 
 Upgrading it will increase its bonus to your <%= @item.stat_name %> by <%= @item.upg_amt %> 
 to a total of <%= @item.bonus + @item.upg_amt %></h3>

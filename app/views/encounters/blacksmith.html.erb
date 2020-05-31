@@ -1,4 +1,10 @@
 <title>Blacksmith</title>
+<p></p>
+<% flash.each do |type, msg| %>
+    <div class="flash">
+      <%= msg %>
+    </div>
+  <% end %>
 <h1>The grizzled blacksmith welcomes you into his workshop... </h1>
 
 <h3> You have <%= @hero.exp_total %> Experience Points that you can spend! </h3>
