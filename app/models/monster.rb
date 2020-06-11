@@ -6,4 +6,19 @@ class Monster < ApplicationRecord
         self.exp_gain = self.hp * 0.2
         self.save 
     end 
+
+    def stat_name 
+        case self 
+        when "attk_val"
+            "attack strength"
+        when "def_val" 
+            "defense strength"
+        when "hp"
+            "hit points"
+        when "exp_gain"
+            "experience point yield"
+        else 
+            "You broke something"
+        end 
+    end 
 end

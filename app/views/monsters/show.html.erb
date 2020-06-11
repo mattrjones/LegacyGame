@@ -1,3 +1,9 @@
 <h1>FIGHT MONSTER NUMBER <%= @monster.id %></h1>
 
-<div><%= @monster.hp %></div>
+<ul>
+<% @monster.attributes.each do |key, value| %>
+    <ul>
+<li><%= key %>: <%= value %></li>
+</ul>
+<% end %>
+</ul>
